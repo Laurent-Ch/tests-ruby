@@ -1,4 +1,4 @@
-require_relative '../lib/04_simon_says'
+require_relative '../lib/04_simon_says.rb'
 
 describe "Simon says" do
   describe "echo" do
