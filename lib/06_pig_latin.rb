@@ -5,9 +5,11 @@ def translate(input)
   i = 0
   while i < words_separator.length
     words_separator[i].length.times do |j|
-      if vowels.include?(words_separator[i][0]) == false
+      if words_separator[i][0..1] == "qu"
+        (words_separator[i] << words_separator[i][0..1]).slice!(0..1)
+      elsif vowels.include?(words_separator[i][0]) == false 
         (words_separator[i] << words_separator[i][0]).slice!(0)
-      else
+      elsif
         words_separator[i] << "ay"
         break
       end
@@ -16,4 +18,3 @@ def translate(input)
   end
   words_separator.join(" ")
 end
-
