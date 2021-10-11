@@ -17,12 +17,3 @@ def translate(input)
   words_separator.join(" ")
 end
 
-=begin
-# Test zone
-puts translate("apple") #appleay
-puts translate("banana") #ananabay
-puts translate("cherry") #errychay
-puts translate("eat pie") #eatay iepay
-puts translate("three") # eethray
-=end
-

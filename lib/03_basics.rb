@@ -6,9 +6,6 @@ def who_is_bigger(a, b, c)
       return "nil detected"
     end
   end
-  #puts m = args.max
-  #puts n = args.index(m)
-  #puts o = letter_number_match[n]
   return "#{letter_number_match[args.index(args.max)]} is bigger"
 end
 
